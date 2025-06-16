@@ -22,3 +22,105 @@ body{
     min-height: 100vh;
     background-color: var(--cor-neutra3);
 }
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#senha-img{
+    width: 100px;
+    margin: 0 auto;
+}
+
+#title{
+    color: var(--cor-neutra);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#senha-gerada{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-neutra2);
+    color: var(--cor-neutra);
+    border-radius: 8px;
+    padding: 8px 18px;;
+}
+
+ #password{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#copia{
+    background-color: transparent;
+    border: none;
+    color: var(--cor-primaria);
+    height: 40px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color .4s ease;
+}
+
+#copia:hover{
+    color:var(--cor-secundaria);
+    font-size: 18px;
+}
+
+#senha-items{
+    width: 400px;
+    background-color: var(--cor-neutra2);
+    color: var(--cor-neutra);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px;
+}
+
+.item {
+    display: flex;
+    gap: 14px;
+}
+
+#qtd-caracteres{
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+#qtd-caracteres::-webkit-inner-spin-button,
+#qtd-caracteres::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+#qtd-caracteres:focus{
+    outline: 1px solid var(--cor-primaria);
+}
+
+#gerar-senha{
+    background-color: var(--cor-primaria);
+    border: none;
+    margin-top: 12px;
+    padding: 10px 0;
+    border-radius: 4px;
+    color: var(--cor-neutra3);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color .4s ease;
+}
+
+#gerar-senha:hover{
+    background-color: var(--cor-secundaria);
+}
