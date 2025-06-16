@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
+}
+
+:root{
+    --cor-primaria: #8bc34a;
+    --cor-secundaria:#8bc34aa6;
+    --cor-neutra: #f8fafc;
+    --cor-neutra2: #24232b;
+    --cor-neutra3: #13121a;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--cor-neutra3);
+}
