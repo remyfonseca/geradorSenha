@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-     <section class="container">
-        <img src="./assets/img/" alt="Cadeado de Senha">
-        <h1>Gerador de Senhas</h1>
+     <section id="container">
+        <img src="./assets/img/senha-icon.svg" id="senha-img" alt="Cadeado de Senha">
+        <h1 id="title">Gerador de Senha</h1>
 
-        <div class="senha-gerada">
-            <span id="password"></span>
+        <div id="senha-gerada">
+            <span id="password">dasdas</span>
             <button id="copia">
                 <i class="fa-solid fa-copy"></i>
             </button>
         </div>
 
-        <div class="senha-items">
+        <div id="senha-items">
             <div class="item">
                 <input type="number" min="1" max="50" value="8" id="qtd-caracteres" name="qtd-caracteres">
                 <label for="qtd-caracteres">Quantidade de Caracteres</label>
@@ -40,8 +40,8 @@
                 <input type="checkbox" id="chk-simbolos" name="chk-simbolos">
                 <label for="chk-simbolos">Adicionar Símbolos?</label>
             </div>
+            <button id="gerar-senha">Gerar Senha</button>
         </div>
-        <button id="gerar-senha">Gerar Senha</button>
     </section>
 
     <script src="./index.js"></script>
